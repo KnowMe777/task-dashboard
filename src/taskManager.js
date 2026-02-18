@@ -1,4 +1,4 @@
-import { Task } from "./Task.js";
+import { Task } from "./task.js";
 
 const STORAGE_KEY = "taskflow_tasks";
 
