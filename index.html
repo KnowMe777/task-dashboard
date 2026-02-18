@@ -28,6 +28,7 @@
       <!-- div for tabs -->
       <nav class="flex flex-col p-4 gap-2">
         <a
+          data-filter="all"
           href="index.html"
           class="filter-btn active w-full flex items-center gap-3 text-left px-4 py-3 hover:bg-gray-50 rounded-lg text-gray-700 transition-colors"
         >
@@ -36,6 +37,7 @@
         </a>
 
         <a
+          data-filter="all"
           href="pages/allTasks.html"
           class="filter-btn w-full flex items-center gap-3 text-left px-4 py-3 hover:bg-gray-50 rounded-lg text-gray-700 transition-colors"
         >
@@ -44,6 +46,7 @@
         </a>
 
         <a
+          data-filter="completed"
           href="pages/completed.html"
           class="filter-btn w-full flex items-center gap-3 text-left px-4 py-3 hover:bg-gray-50 rounded-lg text-gray-700 transition-colors"
         >
@@ -52,6 +55,7 @@
         </a>
 
         <a
+          data-filter="pending"
           href="pages/pending.html"
           class="filter-btn w-full flex items-center gap-3 text-left px-4 py-3 hover:bg-gray-50 rounded-lg text-gray-700 transition-colors"
         >
@@ -110,6 +114,7 @@
                 >
 
                 <input
+                  id="taskTitle"
                   type="text"
                   placeholder="Enter task title"
                   class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-black outline-none"
@@ -122,6 +127,7 @@
                   >Description</label
                 >
                 <textarea
+                  id="taskDesc"
                   placeholder="Enter task description"
                   rows="3"
                   class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-black outline-none"
